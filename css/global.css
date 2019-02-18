@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ header .user {
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 1rem;
     color: #89949b;
     padding-top: 5px;
 }
@@ -54,13 +54,13 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 1rem;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
 nav ul li a { 
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,14 +85,14 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 .name p img { 
@@ -102,10 +102,10 @@ h1 {
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
+    font-size: 1rem;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
-    margin-bottom: 20px;
+
 }
 
 .stats-links span, .stats-links a {
@@ -117,13 +117,14 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: normal;
     color: #4b5c66;
 }
 
+
 h2 {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,7 +138,7 @@ input.search {
     box-shadow: none;
     height: 28px;
     width: 100%;
-    font-size: 13px;
+    font-size: 1rem;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
@@ -151,7 +152,7 @@ input.submit {
 }
 
 .station {
-    font-size: 12px;
+    font-size: 1rem;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -170,7 +171,7 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 1rem;
     color: #89949b;
     margin: 10px 0;
 }
@@ -209,12 +210,81 @@ nav.browse a, nav.music a {
     padding-top: 2px;
 }
 
+
+
+@media screen and (max-width: 640px) {
+    .rech {
+        display:none;
+    }
+    .share{
+        display:none;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    #search, .share{
+        display: none;
+    }
+    .brand{
+        text-align: center;
+    }
+    .user.brand{
+        padding-top: 1%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    h1{
+        font-size: 1.4em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    h3, p.name, .stats-links, input.search, .station, #albums article {
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1.1em;
+    }
+    h3, p.name, .stats-links, input.search, .station, #albums article {
+        font-size: .6em;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3, p.name, .stats-links, input.search, .station, #albums article {
+        font-size: .6em;
+    }
+}
+
+
+
+
+
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
 nav a.recent { background: url("../img/icon/recent.png") no-repeat 0px; }
 nav a.top { background: url("../img/icon/top.png") no-repeat 0px; }
 nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
+
 
 
 

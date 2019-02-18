@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 	<head>
-		<meta charset="UTF-8" />
-		<title>Rdio - Luke Chesser</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/global.css"/>
-	</head>
+		<title>Radio - Luke Chesser</title>
+
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="css/reset.css"/>
+	    <link rel="stylesheet" href="css/global.css"/>
+
+    </head>
+
+
+
 	<body>
+
+
+	<div class="container-fluid">
+
 		<header>
+
+
 			<div class="wrapper">
+				<div class="row">
+				<div class="col-sm-4">
 				<div class="logo-search">
 					<img class="pull-left" src="img/logo.png" />
-				</div>
+				</div></div>
 
+				<div class="col-sm-5">
+					<div class="rech">
 				<form method="POST" action="index.html">
 					<input type="search" required class="search">
 					<input type="submit" name="submit" value="Rechercher" class="submit">
-				</form>
+				</form></div></div>
+				<div class="col-sm-3">
 				<div class="user">
-				    <a href="#">Luke Chesser</a>
+					<div class="dropdown">
+						<button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Luke Chesser
+						</button>
+					</div>
+				</div>
 				</div>
 			</div>
+			</div>
+
+			<hr color="black">
 		</header>
+
+
+
+		<div class="row">
+
+
+			<div class="col-sm-2">
+				<div class="d-none d-xl-inline d-none d-lg-inline">
 		<aside>
 			<h3>Browse</h3>
 			<nav class="browse">
@@ -40,36 +74,61 @@
 				</ul>
 			</nav>
 		</aside>
+			    </div>
+            </div>
 
+
+
+			<div class="col-sm-9">
 		<main>
+
 			<header>
+				<div class="row">
+				<div class="col-sm-1">
 				<div class="name-photo">
 					<aside>
 						<img src="img/artist.png" />
-					</aside>
+					</aside></div></div>
+					<div class="col-sm-11">
 					<div class="name">
 						<h1>Luke Chesser</h1>
 						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
 					</div>
-				</div>
+					</div></div>
+
+
+
 				<div class="stats-links">
+
 					<section class="stats">
+						<div class="row">
+						<div class="col-sm-10">
 						<span>2 Playlists</span>
 						<span>4 Reviews</span>
 						<span>6 Followers</span>
 						<span>13 Following</span>
-					</section>
-					<div class="links">
-						<div>
-							<a href="#">Collection</a>
-							<a href="#">History</a>
 						</div>
-					</div>
+
+						<div class="col-sm-2">
+						<a href="#">Collection</a>
+						<a href="#">History</a>
+						</div>
+						</div>
+					</section>
+
 				</div>
+
+
+
 			</header>
-			<h2>Top Album</h2>
-			<div>
+			<br>
+			<div class="row">
+				<div class="col-9">
+			        <h2>Top Album</h2>
+				</div>
+			<div class="col-3">
 				<a class="station" href="#">Start Station</a>
+			</div>
 			</div>
 			<section id="albums">
 				<article>
@@ -153,6 +212,18 @@
 					<div class="count">13 songs</div>
 				</article>
 			</section>
+
 		</main>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
 	</body>
 </html>
